@@ -53,9 +53,20 @@
             transform: scale(1.02);
         }
         .course-card img {
-            width: 250px;
-            height: auto;
+            width: 190px;
+            height: 160px;
             border-radius: 10px;
+        }
+          @media(max_width: 768px){
+            .course-card{
+                flex-direction : column;
+                algin-items: center;
+                text-algin:left;
+            }
+            .course-card img{
+                width:100%;
+                max-width:300px;
+            }
         }
         .course-info h2 {
             color: #0059b3;
@@ -172,6 +183,7 @@
 </body>
 
 </html>
+
 
 
 
